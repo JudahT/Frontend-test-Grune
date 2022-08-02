@@ -1,0 +1,300 @@
+/* Nav bar right side styling */
+.right-side {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  flex: 1;
+}
+
+.favorite-text:hover {
+  color: #406a7f;
+}
+
+/* Carousel indicators */
+.carousel .carousel-indicators li {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  margin: 0 3px 0 3px;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+}
+
+/* Adding heigh restriction to carousel - uncomment to acivate */
+/* .image-carousel {
+  object-fit: cover;
+  object-position: center;
+  overflow: hidden;
+  height: 100vh;
+} */
+
+/* Adding height restriction to left and right navigation arrows */
+/* .carousel-control-prev .carousel-control-next .carousel-indicators {
+  height: 50vh;
+} */
+
+/* Adding class to carousel div and height restriction to div */
+/* .carousel-height {
+  height: 80vh;
+} */
+
+.swiper {
+  height: 285px;
+  width: 100%;
+  margin-bottom: 20px;
+  position: relative;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+.swiper-slide,
+.card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  border-radius: 2px;
+  width: 300px;
+  /* background-color: red; */
+}
+
+/* Swiper navigation */
+.swiper-button-next {
+  background-image: url(../assets/img/icon/arrowRightSlide.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 100;
+}
+
+.swiper-button-next::after {
+  display: none;
+  z-index: 100;
+}
+
+.swiper-button-prev {
+  background-image: url(../assets/img/icon/arrowLeftSlide.png);
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  background-position: center;
+  z-index: 100;
+}
+
+.swiper-button-prev::after {
+  display: none;
+  z-index: 100;
+}
+
+/* Card styling */
+.card-content {
+  margin-right: 0;
+  width: 300px;
+  height: 264px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* box-shadow: 1px 4px 3px 2px rgba(185, 185, 185, 0.35); */
+  box-shadow: 0 1px 1px 2px rgba(185, 185, 185, 0.35);
+  clip-path: inset(-5px -10px -20px -10px);
+  border-radius: 2px;
+  /* background-color: blue; */
+}
+
+.swiper-slide img {
+  display: block;
+  object-fit: contain;
+}
+
+/* Card element styling */
+.car-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.car-image {
+  width: 300px;
+  height: 150px;
+  margin-top: 5px;
+}
+
+.car-info {
+  width: 300px;
+  display: flex;
+  position: relative;
+}
+
+.car-text {
+  margin-left: 8px;
+  padding-top: 5px;
+  margin-bottom: 0;
+}
+
+/* Original styling with michi js */
+
+/* Toggle Parent Div styling */
+.toggle-favorite {
+  position: absolute;
+}
+
+/* Favorite Div styling */
+#inactive-favorite {
+  display: flex;
+  top: 2px;
+  right: 5px;
+  padding: 5px;
+  margin-left: 35px;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  z-index: 5;
+}
+
+/* Favorite Div styling */
+#active-favorite {
+  display: flex;
+  top: 2px;
+  right: 5px;
+  padding: 5px;
+  margin-left: 35px;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  z-index: 4;
+}
+
+/* Text styling */
+.add-to-favorites {
+  position: relative;
+  background-color: white;
+  width: 75px;
+  padding-top: 2px;
+  text-align: center;
+  padding-right: 8px;
+  margin-bottom: 0;
+  z-index: 5;
+}
+
+/* Text styling */
+.added-to-favorites {
+  position: relative;
+  background-color: white;
+  width: 75px;
+  padding-top: 2px;
+  text-align: center;
+  padding-right: 8px;
+  margin-bottom: 0;
+  z-index: 4;
+}
+
+.grey-pin {
+  height: 35px;
+}
+
+.yellow-pin {
+  height: 35px;
+}
+
+
+
+
+
+
+
+/* js project version */
+
+.favorite {
+  /* font-size: 10rem; */
+  cursor: pointer;
+  user-select: none;
+}
+
+.closed {
+  display: none;
+}
+
+.grey {
+  display: flex;
+  top: 2px;
+  right: 5px;
+  padding: 5px;
+  margin-left: 35px;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  z-index: 5;
+}
+
+.open {
+  display: none;
+}
+
+.yellow {
+  display: flex;
+  top: 2px;
+  right: 5px;
+  padding: 5px;
+  margin-left: 35px;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  z-index: 4;
+}
+
+.activeblock {
+  display: block;
+}
+
+.greyText {
+  position: relative;
+  background-color: white;
+  width: 75px;
+  padding-top: 2px;
+  text-align: center;
+  padding-right: 8px;
+  margin-bottom: 0;
+  z-index: 5;
+}
+
+.yellowText {
+  position: relative;
+  background-color: white;
+  width: 75px;
+  padding-top: 2px;
+  text-align: center;
+  padding-right: 8px;
+  margin-bottom: 0;
+  z-index: 4;
+}
+
+.greyPinImg {
+  height: 35px;
+}
+
+.yellowPinImg {
+  height: 35px;
+}
+
+.view-more {
+  display: flex;
+  justify-items: center;
+  align-items: center;
+  border: 1px solid black;
+  margin: 12px;
+  padding: 5px 30px;
+  cursor: pointer;
+  box-shadow: 0.5px 0.5px 0.5px 0.2px rgb(226, 219, 219);
+}
+
+.view-more-text {
+  margin-left: 20px;
+  margin-bottom: 0;
+  text-align: center;
+}
+
+.button-arrow {
+  margin-left: 15px;
+  height: 15px;
+}
+
+.contact-section {
+  background-color: rgb(77, 76, 76);
+}
