@@ -295,6 +295,63 @@
   height: 15px;
 }
 
+.searchForCars {
+  display: flex;
+}
+
+.carTypeSearch {
+  display: block;
+  background-color: #f7f7f7;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.carModelText {
+  display: inline-block;
+}
+
+.delimiter {
+    border-left: 4px solid #66a9cc;
+    height: 20px;
+  }
+
+.searchButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mobileWhiteSpace {
+  height: 50px;
+  background-color: #fff;
+}
+
+.searchByMaker {
+  padding: 20px 0px;
+  
+  box-shadow: 0px 0px 5px -1px rgba(138, 138, 138, 0.6);
+}
+
+.makerCarCheckbox {
+  margin: 0;
+  background-color: #f7f7f7;
+}
+
+.searchBySettings {
+  background-color: #66a9cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 60px;
+  width: 250px;
+}
+
+.searchButtonArrow {
+  margin: 10px;
+  height: 20px;
+}
+
+/* Contact Section */
 .contact-section {
   background-color: rgb(77, 76, 76);
 }
