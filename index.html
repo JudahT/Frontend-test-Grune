@@ -32,7 +32,7 @@
   </head>
 
   <body>
-    <!-- Navbar container - finished -->
+    <!-- Navbar - Finished -->
     <nav
       class="d-flex container-xxl align-items-start align-items-md-center navbar navbar-expand-md navbar-dark bg-primary"
     >
@@ -120,7 +120,7 @@
       </div>
     </nav>
 
-    <!-- Carousel - finished -->
+    <!-- Carousel - Finished -->
     <div class="image-carousel">
       <div
         id="carouselIndicators"
@@ -222,7 +222,7 @@
       </div>
     </div>
 
-    <!-- Recommended Cars Text Section -->
+    <!-- Recommended Cars Text Section - Finished -->
     <div class="bg-white mt-0 pt-5">
       <h1 class="d-flex justify-content-center align-items-center">
         New Recommended Cars!
@@ -236,7 +236,7 @@
       </p>
     </div>
 
-    <!-- Swiper -->
+    <!-- Swiper - Finished but JS function not working -->
     <div class="swiper mySwiper">
       <div class="swiper-wrapper content">
         <!-- card 1 -->
@@ -512,11 +512,11 @@
       });
     </script>
 
-    <!-- Search section - 2 sections split in the centre -->
+    <!-- Car Search by Type and Maker section -->
     <section class="searchForCars mt-5 mb-3">
       <div class="container">
         <div class="row">
-          <!-- Search by car model section -->
+          <!-- Left side - Search by car model section - Need to add JS for check box to change from unchecked-checked image  -->
           <div class="col carTypeSearch px-3">
             <div class="carTypeTitle">
               <h1 class="text-black-50">Search by Car Model</h1>
@@ -643,14 +643,13 @@
               </div>
             </div>
 
-            <!-- Option field, need 2 dropdowns, 1 pill toggleswitch button, 1 button with img inside -->
+            <!-- Search section - need to style dropdowns, ask questions about how to code toggleswitch button -->
             <div class="optionSearch">
               <h3>
                 <div class="delimiter d-inline me-2"></div>
                 Option Search
               </h3>
               <h5 class="d-inline mt-2 align-middle mx-3">Maker</h5>
-              <!-- Primary Color Dropdown for Maker -->
               <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
               <div class="btn-group mt-2">
                 <button
@@ -672,7 +671,6 @@
               </div>
 
               <h5 class="d-inline align-middle mx-3">Engine Size</h5>
-              <!-- Primary Color Dropdown for Engine Size -->
               <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
               <div class="btn-group">
                 <button
@@ -693,7 +691,7 @@
                 </ul>
               </div>
 
-              <!-- Switch Toggler - need customer CSS from video and then insert txt into it?? -->
+              <!-- Switch Toggler - Ask for help styling this -->
               <input class="d-block my-3" type="checkbox" id="switch" /><label
                 for="switch"
                 >Toggle - make custom css?</label
@@ -714,14 +712,13 @@
           <!-- White space for mobile screens between each section -->
           <section class="d-md-none mobileWhiteSpace"></section>
 
-          <!-- Right Side Div section -->
+          <!-- Right Side - Search by Maker section -->
           <div class="col searchByMaker ms-md-5">
             <div class="makerTitle">
               <h1 class="text-black-50">Search by Maker</h1>
             </div>
             <div class="makerDropdownMenu">
               <h5 class="d-inline mt-2 align-middle mx-3">Maker</h5>
-              <!-- Primary Color Dropdown for Engine Size -->
               <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
               <div class="btn-group">
                 <button
@@ -737,7 +734,6 @@
                 </ul>
               </div>
               <h5 class="d-inline mt-2 align-middle mx-3">Model Type</h5>
-              <!-- Primary Color Dropdown for Engine Size -->
               <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
               <div class="btn-group">
                 <button
@@ -753,7 +749,7 @@
                 </ul>
               </div>
             </div>
-            <!-- need 3 images in here and the checkboxes with text -->
+            <!-- Need to add JS for check box to change from unchecked-checked image -->
             <div class="makerCarCheckbox">
               <div class="container px-0">
                 <div class="row row-cols-3 m-0 pt-3">
@@ -834,7 +830,7 @@
               >Toggle - make custom css?</label
             >
 
-            <!-- Option search - copy from the other side div and then change colors -->
+            <!-- Option search - copy from the other side, then change colors -->
             <div class="optionSearch">
               <div class="searchButton mt-4">
                 <button class="searchBySettings">
