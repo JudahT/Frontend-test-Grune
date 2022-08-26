@@ -353,5 +353,33 @@
 
 /* Contact Section */
 .contact-section {
-  background-color: rgb(77, 76, 76);
+  background-color: #66777f;
+  height: 200px;
+}
+
+.leftContact {
+  padding-left: 250px;
+  padding-top: 20px;
+}
+
+.contactImg {
+  height: 55px;
+  padding: 5px;
+  border: solid 0.1px black;
+}
+
+/* Working on right side content - try to make it with bootstrap flexbox so that mobile works */
+.rightContact {
+  padding-top: 20px;
+}
+
+/* Trying to make line in the middle - make the section with bootstrap colums, then i can make the div flexbox and then center the line in the middle */
+.contactDelimiter  {
+  border-left: 8px solid #406a7f;
+  height: 40px;
+}
+
+
+.footer {
+  background-color: #cceeff;
 }
