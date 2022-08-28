@@ -373,10 +373,14 @@
   padding-top: 20px;
 }
 
+.rightContactLinks {
+  cursor: pointer;
+}
+
 /* Trying to make line in the middle - make the section with bootstrap colums, then i can make the div flexbox and then center the line in the middle */
 .contactDelimiter  {
   border-left: 8px solid #406a7f;
-  height: 40px;
+  height: 150px;
 }
 
 
