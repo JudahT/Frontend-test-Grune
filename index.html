@@ -850,56 +850,64 @@
     </section>
 
     <!-- Contact section WIP -->
-    <section class="contact-section d-flex">
+    <footer class="contact-section d-flex">
       <!-- Left Side -->
-      <div class="leftContact">
-        <!-- contact logo -->
-        <div class="contact-logo">
-          <img
-            class="contactImg"
-            src="./assets/img/logo/tc-black-logo.svg"
-            alt="contact-logo"
-          />
-        </div>
-        <!-- Address -->
-        <p class="address-text fw-bolder m-0">〒000-0000</p>
-        <p class="address-text m-0">
-          ○○<span class="fw-bolder">県</span>○○○<span class="fw-bolder">市</span
-          >○○○○ <span class="fw-bolder">0-0-0</span>
-        </p>
-        <p class="address-text m-0">
-          ○○<span class="fw-bolder">ビル</span> ○<span class="fw-bolder"
-            >F</span
-          >
-        </p>
-      </div>
-      <!-- working on the verticle line in middle of contact section, currently it's on the left -->
-      <div class="midContact d-lg-inline-flex">
-        <div
-          class="contactDelimiter align-items-center justify-content-center d-none d-md-block"
-        ></div>
-      </div>
-      <!-- Right Side -->
-      <div class="rightContact d-flex">
-        <div class="leftLinks ms-lg-3">
-          <p class="rightContactLinks fw-bolder">Search Test Drive Cars</p>
-          <p class="rightContactLinks fw-bolder">Search Favorites List</p>
-          <p class="rightContactLinks fw-bolder">News</p>
-        </div>
-        <div class="rightLinks ms-lg-3">
-          <p class="rightContactLinks fw-bolder">About Service</p>
-          <p class="rightContactLinks fw-bolder">Privacy Policy</p>
-          <p class="rightContactLinks fw-bolder">Terms of Service</p>
-        </div>
-      </div>
-    </section>
+      <div class="container leftContact">
+        <!-- Logo Img -->
+        <div class="row">
+          <div class="col col-md-5">
+            <div class="contact-logo">
+              <img
+                class="contactImg"
+                src="./assets/img/logo/tc-black-logo.svg"
+                alt="contact-logo"
+              />
+            </div>
+            <!-- Address -->
+            <p class="address-text fw-bolder m-0">〒000-0000</p>
+            <p class="address-text m-0">
+              ○○<span class="fw-bolder">県</span>○○○<span class="fw-bolder"
+                >市</span
+              >○○○○ <span class="fw-bolder">0-0-0</span>
+            </p>
+            <p class="address-text m-0">
+              ○○<span class="fw-bolder">ビル</span> ○<span class="fw-bolder"
+                >F</span
+              >
+            </p>
+          </div>
+          <div class="col-md-2">
+            <!-- working on the verticle line in middle of contact section, currently it's on the left -->
+            <div class="midContact d-lg-inline-flex">
+              <div
+                class="contactDelimiter align-items-center justify-content-center d-none d-md-block"
+              ></div>
+            </div>
+          </div>
+          <!-- making list of links -->
+          <div class="col col-md-5 d-flex">
+            <ul class="list-unstyled footer-link">
+              <li class="fw-bolder rightContactLinks">
+                Search Test Drive Cars
+              </li>
+              <li class="fw-bolder rightContactLinks">Search Favorites List</li>
+              <li class="fw-bolder rightContactLinks">News</li>
+            </ul>
 
-    <!-- Footer WIP-->
+            <ul class="list-unstyled footer-link">
+              <li class="fw-bolder rightContactLinks">About Service</li>
+              <li class="fw-bolder rightContactLinks">Privacy Policy</li>
+              <li class="fw-bolder rightContactLinks">Terms of Service</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Copyright footer -->
     <div class="footer mt-2 mb-0">
       <h4 class="text-center fs-5 fw-normal mb-0" height="300px">Copyright</h4>
     </div>
-
-    <!-- Attach section id's and link to navigation in top menu -->
 
     <!-- Swiper JS -->
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
