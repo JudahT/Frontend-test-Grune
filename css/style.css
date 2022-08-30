@@ -350,16 +350,50 @@
   margin: 10px;
   height: 20px;
 }
+/* News Section */
+.news {
+  border: 2px solid red;
+}
 
-/* Contact Section */
+.newsHeadingDelimiter {
+  border-bottom: 4px solid #406a7f;
+  width: 100%;
+}
+
+.newsDelimiterLeft {
+  border-left: 4px solid #406a7f;
+  height: 45px;
+}
+
+.newsDelimiterBottom {
+  border-bottom: 2px solid #b2c2cb;
+  width: 100%;
+}
+
+.newsBtnSmall {
+  /* border: 2px solid blue; */
+}
+
+.newsBtnBig {
+  background-color: #66a9cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 50px;
+  width: 190px;
+}
+
+.newsText {
+}
+
+/* Contact Footer Section */
 .contact-section {
   background-color: #66777f;
-  height: 200px;
 }
 
 .leftContact {
-  /* padding-left: 250px;
-  padding-top: 20px; */
+  padding-top: 20px;
+  padding-bottom: 10px;
 }
 
 .contactImg {
@@ -368,7 +402,9 @@
   border: solid 0.1px black;
 }
 
-/* Working on right side content - try to make it with bootstrap flexbox so that mobile works */
+.midContact {
+}
+
 .rightContact {
   padding-top: 20px;
 }
@@ -377,12 +413,10 @@
   cursor: pointer;
 }
 
-/* Trying to make line in the middle - make the section with bootstrap colums, then i can make the div flexbox and then center the line in the middle */
-.contactDelimiter  {
+.contactDelimiter {
   border-left: 8px solid #406a7f;
-  height: 150px;
+  height: 110px;
 }
-
 
 .footer {
   background-color: #cceeff;
