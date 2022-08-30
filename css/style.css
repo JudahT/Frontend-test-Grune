@@ -299,6 +299,12 @@
   display: flex;
 }
 
+@media only screen and (max-width: 576px) {
+  .searchForCars {
+    padding: 20px;
+  }
+}
+
 .carTypeSearch {
   display: block;
   background-color: #f7f7f7;
@@ -351,8 +357,10 @@
   height: 20px;
 }
 /* News Section */
-.news {
-  border: 2px solid red;
+@media only screen and (max-width: 576px) {
+  .news {
+    padding: 30px;
+  }
 }
 
 .newsHeadingDelimiter {
@@ -365,13 +373,33 @@
   height: 45px;
 }
 
+ @media only screen and (max-width: 576px) {
+.newsDelimiterLeft {
+    border-left: 4px solid #406a7f;
+    height: 75px;
+  }
+ }
+
+ @media only screen and (max-width: 370px) {
+   .newsDelimiterLeft {
+     border-left: 4px solid #406a7f;
+     height: 95px;
+   }
+ }
+
+ @media only screen and (max-width: 324px) {
+   .newsDelimiterLeft {
+     border-left: 4px solid #406a7f;
+     height: 115px;
+   }
+ }
+
 .newsDelimiterBottom {
   border-bottom: 2px solid #b2c2cb;
   width: 100%;
 }
 
 .newsBtnSmall {
-  /* border: 2px solid blue; */
 }
 
 .newsBtnBig {
@@ -384,6 +412,10 @@
 }
 
 .newsText {
+  height: 100%;
+  width: 100%;
+  word-wrap: break-word;
+  word-break: break-word;
 }
 
 /* Contact Footer Section */
