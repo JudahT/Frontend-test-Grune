@@ -10,7 +10,7 @@
   color: #406a7f;
 }
 
-/* Carousel indicators */
+/* Carousel section - indicators */
 .carousel .carousel-indicators li {
   width: 10px;
   height: 10px;
@@ -20,24 +20,7 @@
   cursor: pointer;
 }
 
-/* Adding heigh restriction to carousel - uncomment to acivate */
-/* .image-carousel {
-  object-fit: cover;
-  object-position: center;
-  overflow: hidden;
-  height: 100vh;
-} */
-
-/* Adding height restriction to left and right navigation arrows */
-/* .carousel-control-prev .carousel-control-next .carousel-indicators {
-  height: 50vh;
-} */
-
-/* Adding class to carousel div and height restriction to div */
-/* .carousel-height {
-  height: 80vh;
-} */
-
+/* Swiper section */
 .swiper {
   height: 285px;
   width: 100%;
@@ -295,6 +278,7 @@
   height: 15px;
 }
 
+/* Search for cars by Brand or Maker Section */
 .searchForCars {
   display: flex;
 }
@@ -334,8 +318,12 @@
 
 .searchByMaker {
   padding: 20px 0px;
-  
   box-shadow: 0px 0px 5px -1px rgba(138, 138, 138, 0.6);
+}
+
+.freeSearch {
+    padding: 20px 0px;
+    box-shadow: 0px 0px 5px -1px rgba(138, 138, 138, 0.6);
 }
 
 .makerCarCheckbox {
@@ -356,6 +344,20 @@
   margin: 10px;
   height: 20px;
 }
+
+/* Free Search section */
+.freeSearch {
+}
+
+.freeSearchBtn {
+  background-color: #66a9cc;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  height: 60px;
+  width: 250px;
+}
+
 /* News Section */
 @media only screen and (max-width: 576px) {
   .news {
@@ -409,6 +411,17 @@
   border-radius: 4px;
   height: 50px;
   width: 190px;
+}
+
+@media only screen and (max-width: 400px) {
+  .newsBtnBig {
+    background-color: #66a9cc;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      height: 40px;
+      width: 150px;
+  }
 }
 
 .newsText {
