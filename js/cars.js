@@ -16,11 +16,25 @@ for (let i = 0; i < elements.length; i++) {
   elements[i].addEventListener("click", function () {
     flags[i] = !flags[i];
     if (flags[i]) {
-      elements[i].querySelector(child1).style.display = "block";
+      elements[i].querySelector(child1).style.display = "inline-block";
       elements[i].querySelector(child2).style.display = "none";
     } else {
       elements[i].querySelector(child1).style.display = "none";
-      elements[i].querySelector(child2).style.display = "block";
+      elements[i].querySelector(child2).style.display = "inline-block";
     }
   });
 }
+
+
+// for (let i = 0; i < elements.length; i++) {
+//   elements[i].addEventListener("click", function () {
+//     flags[i] = !flags[i];
+//     if (flags[i]) {
+//       elements[i].querySelector(child1).style.zIndex = "100";
+//       elements[i].querySelector(child2).style.zIndex = "1";
+//     } else {
+//       elements[i].querySelector(child1).style.zIndex = "1";
+//       elements[i].querySelector(child2).style.zIndex = "100";
+//     }
+//   });
+// }

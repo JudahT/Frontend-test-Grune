@@ -184,51 +184,69 @@
   user-select: none;
   display: flex;
   position: absolute;
+  top: 2px;
+  left: 170px;
+  padding: 5px;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  height: 50px;
+  width: 120px;
 }
 
 .grey {
+  /* overflow: visible; */
+  /* display: flex;
   position: relative;
   top: 2px;
-  right: 5px;
+  left: 210px;
   padding: 5px;
-  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7; */
 }
 
 .yellow {
-  display: flex;
+  /* overflow: hidden; */
+  /* display: flex;
   position: relative;
   top: 2px;
-  right: 5px;
+  left: 210px;
   padding: 5px;
-  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7;
+  box-shadow: 0.5px 0.5px 1px 0.1px #cac7c7; */
 }
 
 .greyText {
+  display: inline-block;
   position: relative;
   background-color: white;
-  width: 75px;
+  width: 60px;
   padding-top: 2px;
   text-align: center;
-  padding-right: 8px;
   margin-bottom: 0;
 }
 
 .yellowText {
   position: relative;
   background-color: white;
-  width: 75px;
+  width: 60px;
   padding-top: 2px;
   text-align: center;
-  padding-right: 8px;
   margin-bottom: 0;
 }
 
 .greyPinImg {
+  position: relative;
+  display: inline-block !important;
   height: 35px;
+  top: -15px;
+  right: -10px;
+  margin: 0px !important;
 }
 
 .yellowPinImg {
+  position: relative;
+  display: inline-block !important;
   height: 35px;
+  top: -42px;
+  right: -74px;
+  margin: 0px !important;
 }
 
 /* View more button */
@@ -345,6 +363,12 @@
   border-radius: 4px;
   height: 60px;
   width: 250px;
+}
+
+.freeSearchButtonArrow {
+ position: relative;
+ right: -75px;
+  height: 20px;
 }
 
 .freeSearchInput,
