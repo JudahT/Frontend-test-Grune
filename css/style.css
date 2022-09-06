@@ -262,7 +262,7 @@
 
 .dropToggle:hover {
 }
-
+/* Dropdown toggle */
 select {
   background-color: white;
   background-image: url(../assets/img/icon/path.png);
@@ -290,6 +290,73 @@ select {
     text-shadow: 0 0 0 #ffffff;
   }
 }
+
+/* Toggle Switch wrapper div */
+.toggleSwitcherBtn {
+  display: flex;
+}
+
+/* Switcher Styles */
+.switcher {
+  display: inline-block;
+  height: 31px;
+  background: #fff;
+  border-radius: 2px;
+  width: 150px;
+  border-radius: 10px;
+  border: solid 1px #ddd;
+  position: relative;
+}
+
+.switcher__input {
+  display: none;
+}
+
+.switcher__label {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  position: inherit;
+  z-index: 10;
+  transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  will-change: transform;
+}
+
+.switcher__toggle {
+  position: absolute;
+  float: left;
+  height: 30px;
+  width: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+  background-color: #66a9cc;
+  border-radius: 8px;
+  left: 0px;
+  top: 0px;
+  transition: left 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  will-change: transform;
+}
+
+.switcher__input:checked+.switcher__label {
+  color: #fff;
+}
+
+.switcher__input--MT:checked~.switcher__toggle {
+  left: 75px;
+}
+
+/* Styling for dropdowns and toggle switch on Lg screens and up */
+@media only screen and (min-width: 992px) {
+  select, .toggleSwitcherBtn, .switcher, .switcher__input, .switcher__label, .switcher__toggle {
+   
+  }
+}
+
 
 .freeSearch {
   padding: 20px 0px;

@@ -673,39 +673,77 @@
               </div>
             </div>
 
-            <!-- Search section - need to style dropdowns, ask questions about how to code toggleswitch button -->
-            <div class="optionSearch">
+            <!-- Option Search Section - dropdowns and toggle switch -->
+            <div class="optionSearch mt-4">
               <h3>
                 <div class="delimiter d-inline me-2"></div>
                 Option Search
               </h3>
-              <h5 class="d-inline mt-2 align-middle mx-3">Maker</h5>
-              <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
-              <select class="mt-2">
-                <option>Model</option>
-                <option>Nissan</option>
-                <option>Toyota</option>
-                <option>Mazda</option>
-                <option>BMW</option>
-                <option>Suzuki</option>
-                <option>Mercedes</option>
-              </select>
-              <h5 class="d-inline align-middle mx-3">Engine Size</h5>
-              <select class="mt-2">
-                <option>Engine Size</option>
-                <option>660CC</option>
-                <option>990CC</option>
-                <option>1000CC</option>
-                <option>1500CC</option>
-                <option>1800CC</option>
-                <option>2000CC</option>
-              </select>
+              <div class="row">
+                <div class="col-6 col-xl-2 p-0 mt-2">
+                  <h5 class="d-inline align-middle ms-4">Maker</h5>
+                </div>
+                <div class="col-6 col-xl-3 p-0">
+                  <!-- Dropdown Toggle button -->
+                  <select class="mt-2">
+                    <option>Model</option>
+                    <option>Nissan</option>
+                    <option>Toyota</option>
+                    <option>Mazda</option>
+                    <option>BMW</option>
+                    <option>Suzuki</option>
+                    <option>Mercedes</option>
+                  </select>
+                </div>
+                <div class="col-6 col-xl-3 p-0 mt-2">
+                  <h5 class="d-inline text-center align-middle ms-4 ms-xl-0">
+                    Engine Size
+                  </h5>
+                </div>
+                <div class="col-6 col-xl-4 p-0">
+                  <select class="mt-2">
+                    <option>Engine Size</option>
+                    <option>660CC</option>
+                    <option>990CC</option>
+                    <option>1000CC</option>
+                    <option>1500CC</option>
+                    <option>1800CC</option>
+                    <option>2000CC</option>
+                  </select>
+                </div>
+                <div class="col col-xl-2 p-0">
+                  <h5 class="toggleTitle ms-lg-4 mt-3">AT/MT</h5>
+                </div>
+                <div class="col col-xl-10 p-0">
+                  <!-- Toggle Switch title -->
+                  <div class="toggleSwitcherBtn mt-3">
+                    <!-- Toggle Switch -->
+                    <div class="switcher">
+                      <input
+                        type="radio"
+                        name="balance"
+                        value="AT"
+                        id="AT"
+                        class="switcher__input switcher__input--AT"
+                        checked=""
+                      />
+                      <label for="AT" class="switcher__label">AT</label>
 
-              <!-- Switch Toggler - Ask for help styling this -->
-              <input class="d-block my-3" type="checkbox" id="switch" /><label
-                for="switch"
-                >Toggle - make custom css?</label
-              >
+                      <input
+                        type="radio"
+                        name="balance"
+                        value="MT"
+                        id="MT"
+                        class="switcher__input switcher__input--MT"
+                      />
+                      <label for="MT" class="switcher__label">MT</label>
+
+                      <span class="switcher__toggle"></span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
               <div class="searchButton mt-4">
                 <button class="searchBySettings">
                   Search with these settings
