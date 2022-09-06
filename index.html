@@ -9,7 +9,7 @@
     <meta name="Description" content="Tasting the cars" />
     <!-- fav icon -->
     <link rel="icon" href="assets/img/icon/favicon.ico" type="image/x-icon" />
-    <link rel="stylesheet" href="assets/css/cssreset-min.css" />
+    <!-- <link rel="stylesheet" href="./css/cssreset-min.css" /> -->
     <!-- Custom css -->
     <link rel="stylesheet" href="./css/style.css" />
     <!-- Swiper's CSS -->
@@ -477,49 +477,6 @@
       <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- Script to initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 10,
-        slidesPerGroup: 1,
-        loop: true,
-        loopFillGroupWithBlank: true,
-
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-          // when window width is sm >= 320px
-          320: {
-            slidesPerView: 2,
-            spaceBetween: 20,
-          },
-          // when window width is sm >= 576px
-          576: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          // when window width is md >= 768px
-          768: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          // when window width is >= 992pxpx
-          992: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-          // when window width is >= 1200pxpx
-          1200: {
-            slidesPerView: 4,
-            spaceBetween: 40,
-          },
-        },
-      });
-    </script>
-
     <!-- Car Search by Type and Maker section -->
     <section class="searchForCars mt-5 mb-3">
       <div class="container">
@@ -724,45 +681,25 @@
               </h3>
               <h5 class="d-inline mt-2 align-middle mx-3">Maker</h5>
               <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
-              <div class="btn-group mt-2">
-                <button
-                  type="button"
-                  class="btn btn-white dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Action
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Nissan</a></li>
-                  <li><a class="dropdown-item" href="#">Toyota</a></li>
-                  <li><a class="dropdown-item" href="#">Mazda</a></li>
-                  <li><a class="dropdown-item" href="#">BMW</a></li>
-                  <li><a class="dropdown-item" href="#">Suzuki</a></li>
-                  <li><a class="dropdown-item" href="#">Mercedes</a></li>
-                </ul>
-              </div>
-
+              <select class="mt-2">
+                <option>Model</option>
+                <option>Nissan</option>
+                <option>Toyota</option>
+                <option>Mazda</option>
+                <option>BMW</option>
+                <option>Suzuki</option>
+                <option>Mercedes</option>
+              </select>
               <h5 class="d-inline align-middle mx-3">Engine Size</h5>
-              <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
-              <div class="btn-group">
-                <button
-                  type="button"
-                  class="btn btn-white dropdown-toggle"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Action
-                </button>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">660CC</a></li>
-                  <li><a class="dropdown-item" href="#">990CC</a></li>
-                  <li><a class="dropdown-item" href="#">1000CC</a></li>
-                  <li><a class="dropdown-item" href="#">1500CC</a></li>
-                  <li><a class="dropdown-item" href="#">1800CC</a></li>
-                  <li><a class="dropdown-item" href="#">2000CC</a></li>
-                </ul>
-              </div>
+              <select class="mt-2">
+                <option>Engine Size</option>
+                <option>660CC</option>
+                <option>990CC</option>
+                <option>1000CC</option>
+                <option>1500CC</option>
+                <option>1800CC</option>
+                <option>2000CC</option>
+              </select>
 
               <!-- Switch Toggler - Ask for help styling this -->
               <input class="d-block my-3" type="checkbox" id="switch" /><label
