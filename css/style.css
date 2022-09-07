@@ -257,11 +257,6 @@
   box-shadow: 0px 0px 5px -1px rgba(138, 138, 138, 0.6);
 }
 
-.dropToggle {
-}
-
-.dropToggle:hover {
-}
 /* Dropdown toggle */
 select {
   background-color: white;
@@ -283,6 +278,12 @@ select {
   }
 }
 
+/* Right Column - Maker disabled Dropdown */
+.rightDropdown {
+  background-image: url(../assets/img/icon/path\ disabled.jpeg);
+}
+
+
 // remove dotted firefox border
 @-moz-document url-prefix() {
   select {
@@ -292,11 +293,13 @@ select {
 }
 
 /* Toggle Switch wrapper div */
-.toggleSwitcherBtn {
+.toggleSwitcherBtn2 {
   display: flex;
+  pointer-events: none;
+  user-select: none;
 }
 
-/* Switcher Styles */
+/* LEFT Switcher - Car Model column */
 .switcher {
   display: inline-block;
   height: 31px;
@@ -347,6 +350,63 @@ select {
 }
 
 .switcher__input--MT:checked~.switcher__toggle {
+  left: 75px;
+}
+
+/* RIGHT Switcher - Car Maker column */
+.switcher {
+  display: inline-block;
+  height: 31px;
+  background: #fff;
+  border-radius: 2px;
+  width: 150px;
+  border-radius: 10px;
+  border: solid 1px #ddd;
+  position: relative;
+}
+
+.switcher__input {
+  display: none;
+}
+
+.switcher__label {
+  float: left;
+  width: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  color: #000;
+  text-align: center;
+  cursor: pointer;
+  position: inherit;
+  z-index: 10;
+  transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  will-change: transform;
+}
+
+.switcher__toggle {
+  position: absolute;
+  float: left;
+  height: 30px;
+  width: 50%;
+  font-size: 12px;
+  line-height: 30px;
+  cursor: pointer;
+  border-radius: 8px;
+  left: 0px;
+  top: 0px;
+  transition: left 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  will-change: transform;
+}
+
+.toggleColor {
+  background-color: #aaaaaa;
+}
+
+.switcher__input:checked+.switcher__label {
+  color: #fff;
+}
+
+.switcher__input--MT2:checked~.switcher__toggle {
   left: 75px;
 }
 

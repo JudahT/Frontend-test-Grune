@@ -712,7 +712,7 @@
                   </select>
                 </div>
                 <div class="col col-xl-2 p-0">
-                  <h5 class="toggleTitle ms-lg-4 mt-3">AT/MT</h5>
+                  <h5 class="toggleTitle ms-lg-4 mt-3 ms-4">AT/MT</h5>
                 </div>
                 <div class="col col-xl-10 p-0">
                   <!-- Toggle Switch title -->
@@ -768,35 +768,41 @@
                   <h1 class="text-black-50 ms-3">Search by Maker</h1>
                 </div>
                 <div class="makerDropdownMenu">
-                  <h5 class="d-inline mt-2 align-middle ms-3 me-1">Maker</h5>
-                  <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-white dropdown-toggle p-0"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Action
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Nissan</a></li>
-                    </ul>
-                  </div>
-                  <h5 class="d-inline mt-2 align-middle mx-2">Type</h5>
-                  <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
-                  <div class="btn-group">
-                    <button
-                      type="button"
-                      class="btn btn-white dropdown-toggle p-0"
-                      data-bs-toggle="dropdown"
-                      aria-expanded="false"
-                    >
-                      Action
-                    </button>
-                    <ul class="dropdown-menu">
-                      <li><a class="dropdown-item" href="#">Light Car</a></li>
-                    </ul>
+                  <div class="row mb-4">
+                    <div class="col-6 col-xl-2 p-0 mt-2">
+                      <h5 class="d-inline mt-2 align-middle ms-5">Maker</h5>
+                    </div>
+                    <div class="col-6 col-xl-4 p-0">
+                      <!-- Dropdown Toggle button -->
+                      <select class="mt-2 ms-xl-4">
+                        <option>Model</option>
+                        <option>Nissan</option>
+                        <option>Toyota</option>
+                        <option>Mazda</option>
+                        <option>BMW</option>
+                        <option>Suzuki</option>
+                        <option>Mercedes</option>
+                      </select>
+                    </div>
+                    <div class="col-6 col-xl-2 p-0 mt-2">
+                      <h5 class="d-inline mt-2 align-middle ms-5 ms-xl-0">
+                        Type
+                      </h5>
+                    </div>
+                    <div class="col-6 col-xl-4 p-0">
+                      <!-- Dropdown Toggle button -->
+                      <select class="mt-2">
+                        <option>Light Car</option>
+                        <option>Hatch</option>
+                        <option>Van</option>
+                        <option>Sedan</option>
+                        <option>Sports</option>
+                        <option>Wagon</option>
+                        <option>SUV</option>
+                        <option>Open</option>
+                        <option>Van</option>
+                      </select>
+                    </div>
                   </div>
                 </div>
                 <div class="makerCarCheckbox">
@@ -877,40 +883,74 @@
                     </div>
                   </div>
                 </div>
-                <h3 class="mt-3">
-                  <div class="delimiter d-inline mx-2"></div>
-                  Option Search
-                </h3>
 
-                <h5 class="d-inline align-middle mx-3">Engine Size</h5>
-                <!-- Need to make a regular dropdown with custom CSS for inserting the img file in assets folder for the dropdown arrow -->
-                <div class="btn-group">
-                  <button
-                    type="button"
-                    class="btn btn-white dropdown-toggle"
-                    data-bs-toggle="dropdown"
-                    aria-expanded="false"
-                  >
-                    Action
-                  </button>
-                  <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">660CC</a></li>
-                    <li><a class="dropdown-item" href="#">990CC</a></li>
-                    <li><a class="dropdown-item" href="#">1000CC</a></li>
-                    <li><a class="dropdown-item" href="#">1500CC</a></li>
-                    <li><a class="dropdown-item" href="#">1800CC</a></li>
-                    <li><a class="dropdown-item" href="#">2000CC</a></li>
-                  </ul>
-                </div>
+                <!-- Option Search Section - dropdowns and toggle switch -->
+                <div class="optionSearch mt-4">
+                  <h3>
+                    <div class="delimiter d-inline me-2"></div>
+                    Option Search
+                  </h3>
+                  <div class="row">
+                    <div class="col-6 col-xl-3 p-0 mt-2">
+                      <h5
+                        class="d-inline text-center align-middle ms-4 ms-xl-4 text-secondary"
+                      >
+                        Engine Size
+                      </h5>
+                    </div>
+                    <div class="col-6 col-xl-8 p-0">
+                      <select
+                        class="rightDropdown mt-2 ms-xl-3 text-secondary"
+                        disabled
+                      >
+                        <option>Engine Size</option>
+                        <option>660CC</option>
+                        <option>990CC</option>
+                        <option>1000CC</option>
+                        <option>1500CC</option>
+                        <option>1800CC</option>
+                        <option>2000CC</option>
+                      </select>
+                    </div>
+                    <div class="col col-xl-3 p-0">
+                      <h5 class="toggleTitle ms-lg-4 mt-3 ms-4 text-secondary">
+                        AT/MT
+                      </h5>
+                    </div>
+                    <div class="col col-xl-8 p-0">
+                      <!-- Toggle Switch title -->
+                      <div class="toggleSwitcherBtn2 mt-3">
+                        <!-- Toggle Switch -->
+                        <div class="switcher ms-xl-3">
+                          <input
+                            type="radio"
+                            name="balance"
+                            value="AT2"
+                            id="AT2"
+                            class="switcher__input switcher__input--AT"
+                            checked=""
+                            disabled
+                          />
+                          <label for="AT2" class="switcher__label text-white"
+                            >AT</label
+                          >
 
-                <!-- Switch Toggler - need customer CSS from video and then insert txt into it?? -->
-                <input class="d-block my-3" type="checkbox" id="switch" /><label
-                  for="switch"
-                  >Toggle - make custom css?</label
-                >
+                          <input
+                            type="radio"
+                            name="balance"
+                            value="MT2"
+                            id="MT2"
+                            class="switcher__input switcher__input--MT2"
+                            disabled
+                          />
+                          <label for="MT2" class="switcher__label">MT</label>
 
-                <!-- Option search - copy from the other side, then change colors -->
-                <div class="optionSearch">
+                          <span class="switcher__toggle toggleColor"></span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
                   <div class="searchButton mt-4">
                     <button class="searchBySettings">
                       Search with these settings
