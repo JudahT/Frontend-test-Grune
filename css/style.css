@@ -268,14 +268,13 @@ select {
   border: solid 1px lightgray;
   color: #000;
   padding: 5px 50px 5px 10px;
-  // disable default appearance
   outline: none;
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
-  &::-ms-expand {
+  /* &::-ms-expand {
     display: none;
-  }
+  } */
 }
 
 /* Right Column - Maker disabled Dropdown */
@@ -283,8 +282,6 @@ select {
   background-image: url(../assets/img/icon/path\ disabled.jpeg);
 }
 
-
-// remove dotted firefox border
 @-moz-document url-prefix() {
   select {
     color: rgba(0, 0, 0, 0);
