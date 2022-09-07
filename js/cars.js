@@ -24,3 +24,21 @@ for (let i = 0; i < elements.length; i++) {
     flags[i] = !flags[i];
   });
 }
+
+// Scroll to top button
+$(document).ready(function(){
+	$(window).scroll(function () {
+			if ($(this).scrollTop() > 50) {
+				$('#back-to-top').fadeIn();
+			} else {
+				$('#back-to-top').fadeOut();
+			}
+		});
+		// scroll body to 0px on click
+		$('#back-to-top').click(function () {
+			$('body,html').animate({
+				scrollTop: 0
+			}, 50);
+			return false;
+		});
+});

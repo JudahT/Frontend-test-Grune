@@ -557,6 +557,14 @@ textarea:focus {
   word-break: break-word;
 }
 
+/* Return to top Button */
+.back-to-top {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: none;
+}
+
 /* Contact Footer Section */
 .contact-section {
   background-color: #66777f;

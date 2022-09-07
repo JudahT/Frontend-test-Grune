@@ -17,6 +17,11 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    />
 
     <!-- Custom JS Link -->
     <script defer src="./js/cars.js"></script>
@@ -237,7 +242,7 @@
     </div>
 
     <!-- Swiper - Finished but JS function not working -->
-    <div class="swiper mySwiper">
+    <div id="お気に入り" class="swiper mySwiper">
       <div class="swiper-wrapper content">
         <!-- card 1 -->
         <div class="swiper-slide card">
@@ -964,7 +969,7 @@
                 </div>
               </div>
               <div class="w-100"></div>
-              <div class="col searchLower">
+              <div id="検索" class="col searchLower">
                 <div class="row">
                   <div class="col freeSearch mt-5">
                     <div class="makerTitle">
@@ -1060,8 +1065,15 @@
       </div>
     </section>
 
+    <!-- Return to top button -->
+    <section>
+      <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"
+        ><img class="backToTopImg" src="./assets/img/icon/backToTop.png" alt=""
+      /></a>
+    </section>
+
     <!-- Footer Contact - COMPLETE -->
-    <footer class="contact-section d-flex">
+    <footer id="サービスについて" class="contact-section d-flex">
       <!-- Left Side -->
       <div class="container">
         <!-- Logo Img -->
