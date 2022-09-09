@@ -17,11 +17,6 @@
       rel="stylesheet"
       href="https://unpkg.com/swiper/swiper-bundle.min.css"
     />
-    <!-- Font Awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
-    />
 
     <!-- Custom JS Link -->
     <script defer src="./js/cars.js"></script>
@@ -37,9 +32,9 @@
   </head>
 
   <body>
-    <!-- Navbar - Finished -->
+    <!-- Navbar - Complete -->
     <nav
-      class="d-flex container-xxl align-items-start align-items-md-center navbar navbar-expand-md navbar-dark bg-primary"
+      class="d-flex align-items-start align-items-md-center navbar navbar-expand-md navbar-dark bg-primary"
     >
       <!-- Nav Logo with margin left -->
       <div class="ms-3">
@@ -54,8 +49,8 @@
       </div>
 
       <!-- Right side of flexbox navbar -->
-      <div class="right-side">
-        <!-- favorites button -->
+      <div class="right-side me-3">
+        <!-- Favorites button -->
         <div>
           <a
             class="btn btn-outline-light rounded-0 favorite-text d-none d-md-block"
@@ -71,7 +66,7 @@
           </a>
         </div>
 
-        <!-- toggle button / toggler for mobile nav -->
+        <!-- Toggle button / Toggler for mobile nav -->
         <button
           class="navbar-toggler my-2"
           type="button"
@@ -81,7 +76,7 @@
           <span class="navbar-toggler-icon"></span>
         </button>
 
-        <!-- navbar links. Used div with class of wrapper to wrap content in to make toggler smooth. -->
+        <!-- Navbar links. -->
         <div class="wrapper">
           <div
             class="collapse navbar-collapse justify-content-end align-center bg-primary"
@@ -125,7 +120,7 @@
       </div>
     </nav>
 
-    <!-- Carousel - Finished -->
+    <!-- Carousel - Complete -->
     <div class="image-carousel">
       <div
         id="carouselIndicators"
@@ -206,28 +201,10 @@
             />
           </div>
         </div>
-
-        <!-- Left and right controls/icons - reference image doesn't have them so commenting these out! -->
-        <!-- <a
-          class="carousel-control-prev"
-          href="#carouselIndicators"
-          role="button"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselIndicators"
-          role="button"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        </a> -->
       </div>
     </div>
 
-    <!-- Recommended Cars Text Section - Finished -->
+    <!-- Recommended Cars Text Section - Complete -->
     <div class="bg-white mt-0 pt-5">
       <h1 class="d-flex justify-content-center align-items-center">
         New Recommended Cars!
@@ -241,7 +218,7 @@
       </p>
     </div>
 
-    <!-- Swiper - Finished but JS function not working -->
+    <!-- Swiper - Complete -->
     <div id="お気に入り" class="swiper mySwiper">
       <div class="swiper-wrapper content">
         <!-- card 1 -->
@@ -482,7 +459,7 @@
       <div class="swiper-button-prev"></div>
     </div>
 
-    <!-- Car Search by Type and Maker section -->
+    <!-- Car Search by Type and Maker section - Complete -->
     <section class="searchForCars mt-5 mb-3">
       <div class="container">
         <div class="row">
@@ -491,7 +468,7 @@
             class="col col-md-6 justify-content-md-center carTypeSearch px-3"
           >
             <div class="carTypeTitle">
-              <h1 class="text-black-50">Search by Car Model</h1>
+              <h2 class="text-black-50">Search by Car Model</h2>
             </div>
             <div class="container px-0">
               <div class="row m-0 pt-3">
@@ -770,7 +747,7 @@
             <div class="row">
               <div class="col searchUpper searchByMaker">
                 <div class="makerTitle">
-                  <h1 class="text-black-50 ms-3">Search by Maker</h1>
+                  <h2 class="text-black-50 ms-3">Search by Maker</h2>
                 </div>
                 <div class="makerDropdownMenu">
                   <div class="row mb-4">
@@ -904,10 +881,7 @@
                       </h5>
                     </div>
                     <div class="col-6 col-xl-8 p-0">
-                      <select
-                        class="rightDropdown mt-2 ms-xl-3 text-secondary"
-                        disabled
-                      >
+                      <select class="rightDropdown mt-2 ms-xl-3 text-secondary">
                         <option>Engine Size</option>
                         <option>660CC</option>
                         <option>990CC</option>
@@ -934,11 +908,8 @@
                             id="AT2"
                             class="switcher__input switcher__input--AT"
                             checked=""
-                            disabled
                           />
-                          <label for="AT2" class="switcher__label text-white"
-                            >AT</label
-                          >
+                          <label for="AT2" class="switcher__label">AT</label>
 
                           <input
                             type="radio"
@@ -946,7 +917,6 @@
                             value="MT2"
                             id="MT2"
                             class="switcher__input switcher__input--MT2"
-                            disabled
                           />
                           <label for="MT2" class="switcher__label">MT</label>
 
@@ -973,7 +943,7 @@
                 <div class="row">
                   <div class="col freeSearch mt-5">
                     <div class="makerTitle">
-                      <h1 class="text-black-50 ms-3">Free Search</h1>
+                      <h2 class="text-black-50 ms-3">Free Search</h2>
                     </div>
                     <div class="d-flex justify-content-center">
                       <input
@@ -1004,7 +974,7 @@
       <!-- End of Search for Cars section -->
     </section>
 
-    <!-- News section - COMPLETE -->
+    <!-- News section - Complete -->
     <section id="お知らせ" class="my-5">
       <div
         class="container news d-flex justify-content-center align-items-center"
@@ -1018,7 +988,8 @@
               <button class="newsBtnBig">Click to see more</button>
             </div>
           </div>
-          <div class="newsHeadingDelimiter"></div>
+          <div class="newsHeadingDelimiter col-12"></div>
+          <!-- hide old version -->
           <div
             class="col-12 newsDelimiterLeft d-flex justify-content-between my-3 pe-0"
           >
@@ -1032,22 +1003,8 @@
               </button>
             </div>
           </div>
-          <div class="col-12 newsDelimiterBottom"></div>
-          <div
-            class="col-12 newsDelimiterLeft d-flex justify-content-between my-3 pe-0"
-          >
-            <p class="newsText text-break d-block">
-              2022/01/01 <br />Lorem ipsum dolor sit amet consectetur
-              adipisicing elit.
-            </p>
-            <div class="d-flex">
-              <button type="button" class="btn newsBtnSmall ms-5 p-0 ps-5">
-                <img src="./assets/img/icon/arrowRight.png" alt="" />
-              </button>
-            </div>
-          </div>
-          <div class="col-12 newsDelimiterBottom"></div>
-          <div
+          <!-- <div class="col-12 newsDelimiterBottom"></div> -->
+          <!-- <div
             class="col-12 newsDelimiterLeft d-flex justify-content-between my-3 pe-0"
           >
             <p class="newsText d-block">
@@ -1059,20 +1016,141 @@
                 <img src="./assets/img/icon/arrowRight.png" alt="" />
               </button>
             </div>
-          </div>
-          <div class="col-12 newsDelimiterBottom"></div>
+          </div> -->
+          <!-- <div class="col-12 newsDelimiterBottom"></div> -->
+          <!-- <div
+            class="col-12 newsDelimiterLeft d-flex justify-content-between my-3 pe-0"
+          >
+            <p class="newsText d-block">
+              2022/01/01 <br />Lorem ipsum dolor sit amet consectetur
+              adipisicing elit.
+            </p>
+            <div class="d-flex">
+              <button type="button" class="btn newsBtnSmall ms-5 p-0 ps-5">
+                <img src="./assets/img/icon/arrowRight.png" alt="" />
+              </button>
+            </div>
+          </div> -->
+          <!-- <div class="col-12 newsDelimiterBottom"></div> -->
         </div>
+      </div>
+
+      <!-- Accordion Bootstrap 5 -->
+      <div
+        class="accordion accordion-flush container p-0"
+        id="accordionFlushExample"
+      >
+        <!-- Accordion 1 -->
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingOne">
+            <button
+              class="accordion-button collapsed newsDelimiterLeft my-3 pe-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseOne"
+              aria-expanded="false"
+              aria-controls="flush-collapseOne"
+            >
+              <p class="newsText d-block">
+                2022/01/01 <br />Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseOne"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingOne"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion. This is the first item's
+              accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 newsDelimiterBottom"></div>
+      </div>
+      <!-- Accordion 2 -->
+      <div
+        class="accordion accordion-flush container p-0"
+        id="accordionFlushExample"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingTwo">
+            <button
+              class="accordion-button collapsed newsDelimiterLeft my-3 pe-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseTwo"
+              aria-expanded="false"
+              aria-controls="flush-collapseTwo"
+            >
+              <p class="newsText d-block">
+                2022/01/01 <br />Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseTwo"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingTwo"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion. This is the second item's
+              accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 newsDelimiterBottom"></div>
+      </div>
+      <!-- Accordion 3 -->
+      <div
+        class="accordion accordion-flush container p-0"
+        id="accordionFlushExample"
+      >
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="flush-headingThree">
+            <button
+              class="accordion-button collapsed newsDelimiterLeft my-3 pe-0"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#flush-collapseThree"
+              aria-expanded="false"
+              aria-controls="flush-collapseThree"
+            >
+              <p class="newsText d-block">
+                2022/01/01 <br />Lorem ipsum dolor sit amet consectetur
+                adipisicing elit.
+              </p>
+            </button>
+          </h2>
+          <div
+            id="flush-collapseThree"
+            class="accordion-collapse collapse"
+            aria-labelledby="flush-headingThree"
+            data-bs-parent="#accordionFlushExample"
+          >
+            <div class="accordion-body">
+              Placeholder content for this accordion. This is the third item's
+              accordion body.
+            </div>
+          </div>
+        </div>
+        <div class="col-12 newsDelimiterBottom"></div>
       </div>
     </section>
 
-    <!-- Return to top button -->
+    <!-- Return to top button - Complete -->
     <section>
       <a id="back-to-top" href="#" class="btn btn-lg back-to-top" role="button"
         ><img class="backToTopImg" src="./assets/img/icon/backToTop.png" alt=""
       /></a>
     </section>
 
-    <!-- Footer Contact - COMPLETE -->
+    <!-- Footer Contact - Complete -->
     <footer id="サービスについて" class="contact-section d-flex">
       <!-- Left Side -->
       <div class="container">
@@ -1125,7 +1203,7 @@
       </div>
     </footer>
 
-    <!-- Copyright - COMPLETE -->
+    <!-- Copyright - Complete -->
     <div class="footer mt-2 mb-0">
       <h4 class="text-center fs-5 fw-normal mb-0" height="300px">Copyright</h4>
     </div>

@@ -6,6 +6,10 @@
   flex: 1;
 }
 
+.navbar {
+  margin: 0 !important;
+}
+
 .favorite-text:hover {
   color: #406a7f;
 }
@@ -272,14 +276,16 @@ select {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
+  cursor: pointer;
   /* &::-ms-expand {
     display: none;
   } */
 }
 
-/* Right Column - Maker disabled Dropdown */
+/* Right Column - Maker Dropdown */
 .rightDropdown {
   background-image: url(../assets/img/icon/path\ disabled.jpeg);
+  cursor: pointer;
 }
 
 @-moz-document url-prefix() {
@@ -292,8 +298,6 @@ select {
 /* Toggle Switch wrapper div */
 .toggleSwitcherBtn2 {
   display: flex;
-  pointer-events: none;
-  user-select: none;
 }
 
 /* LEFT Switcher - Car Model column */
@@ -322,7 +326,7 @@ select {
   cursor: pointer;
   position: inherit;
   z-index: 10;
-  transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
@@ -338,15 +342,15 @@ select {
   border-radius: 8px;
   left: 0px;
   top: 0px;
-  transition: left 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
-.switcher__input:checked+.switcher__label {
+.switcher__input:checked + .switcher__label {
   color: #fff;
 }
 
-.switcher__input--MT:checked~.switcher__toggle {
+.switcher__input--MT:checked ~ .switcher__toggle {
   left: 75px;
 }
 
@@ -376,7 +380,7 @@ select {
   cursor: pointer;
   position: inherit;
   z-index: 10;
-  transition: color 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
@@ -391,7 +395,7 @@ select {
   border-radius: 8px;
   left: 0px;
   top: 0px;
-  transition: left 0.25s cubic-bezier(0.4, 0.0, 0.2, 1);
+  transition: left 0.25s cubic-bezier(0.4, 0, 0.2, 1);
   will-change: transform;
 }
 
@@ -399,21 +403,24 @@ select {
   background-color: #aaaaaa;
 }
 
-.switcher__input:checked+.switcher__label {
+.switcher__input:checked + .switcher__label {
   color: #fff;
 }
 
-.switcher__input--MT2:checked~.switcher__toggle {
+.switcher__input--MT2:checked ~ .switcher__toggle {
   left: 75px;
 }
 
 /* Styling for dropdowns and toggle switch on Lg screens and up */
 @media only screen and (min-width: 992px) {
-  select, .toggleSwitcherBtn, .switcher, .switcher__input, .switcher__label, .switcher__toggle {
-   
+  select,
+  .toggleSwitcherBtn,
+  .switcher,
+  .switcher__input,
+  .switcher__label,
+  .switcher__toggle {
   }
 }
-
 
 .freeSearch {
   padding: 20px 0px;
@@ -552,6 +559,19 @@ textarea:focus {
   width: 100%;
   word-wrap: break-word;
   word-break: break-word;
+}
+
+.accordion-button::after {
+  transform: rotate(0deg) !important;
+  background-image: url(../assets/img/icon/arrowRight.png);
+  background-repeat: no-repeat;
+  background-size: auto;
+}
+.accordion-button:not(.collapsed)::after {
+  transform: rotate(90deg) !important;
+  background-image: url(../assets/img/icon/arrowRight.png);
+  background-repeat: no-repeat;
+  background-size: auto;
 }
 
 /* Return to top Button */
